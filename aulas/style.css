@@ -28,6 +28,19 @@ footer{
     color: #777;
 }
 
+
+/* Formatação genérica para os links*/
+
+a{
+    text-decoration: nome;      /* retirar o sublinhado dos links */
+    color: #492291;           /* alterar a cor dos links*/
+}
+
+a:hover{
+    text-decoration: underline;     /* volta o sublinhado quando passar o mouse em cima*/
+}
+
+
 /* Formatação da Home */
 
 main{
@@ -137,8 +150,11 @@ h2{
     
 }
 
-
-
+/* Link voltar do rodapé das páginas*/
+.voltar{
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 
