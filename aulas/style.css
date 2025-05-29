@@ -349,3 +349,33 @@ th{
 .tabela3 td:nth-child(4){  /* pseudo seletor*/
     text-align: center;
 }
+
+/* Formatação da galeria de imagens*/
+
+.galeria-destaque{
+    display: flex;              /* necessário, pois img é tag inline*/
+    justify-content: center;    /* Para centralizar uma imagen*/
+    background-color: #333;
+    margin: 30px 0px 10px 0px;  /* top, right bottom left*/
+    img{
+        width: 60%;
+    }
+}
+.galeria-miniaturas{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 110px;
+    }
+}
+
+.videos{
+    text-align: center;
+    video{
+        width: 70%;
+    }
+    iframe{
+        width: 70%;
+        height: 470px;
+    }
+}
