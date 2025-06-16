@@ -7,6 +7,7 @@
     /* margem externa */
     padding: 0;
     /* margem interna */
+    box-sizing: border-box; /* altera como o CSS contabiliza o tamanho de um objeto. Incluindo as bordas e margens ao tamanho do objeto*/
 }
 
 /* Regra */
@@ -530,6 +531,8 @@ th{
     */
     main{
         width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .grid-home{
         *{
@@ -539,9 +542,32 @@ th{
     .grid-clinica,
     .grid-especialidades,
     .grid-convenios,
-    .form-group{
+    .form-group,
+    .contato{
         flex-direction: column;  /* mudar a direção do empilhamento das tags*/
         align-items: center;
+    }
+
+    .grid-clinica{
+        .card{
+            width: 100%;
+        }
+        div{
+            flex-basis: 100%;
+        }
+    }
+
+    .galeria-destaque{
+        img{
+            width: 100%;
+        }
+    }
+
+    .galeria-miniaturas{
+        flex-wrap: wrap;        /* Permitir que quebre a linha*/
+        img{
+            width: 20%;
+        }
     }
 
     .videos{
@@ -556,6 +582,13 @@ th{
     .agendamento{
         width: 100%;
     }
+
+    .contato{
+        div:last-child{
+            margin-top: 50px;
+        }
+    }
+
 
 }
 
